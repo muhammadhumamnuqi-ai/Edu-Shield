@@ -1,0 +1,33 @@
+PANDUAN SETUP DATABASE EDUSHIELD
+=================================
+
+Prasyarat:
+- Laragon (MySQL/MariaDB) terinstal dan berjalan
+- HeidiSQL atau MySQL CLI
+
+Langkah 1: Buat Database & Schema
+Buka Laragon -> Start MySQL.
+Buka terminal Laragon (klik kanan -> Open Terminal) lalu jalankan:
+
+    mysql -u root < D:\Semester6\proyek\edushield\database\schema.sql
+
+Atau buka HeidiSQL (klik kanan Laragon -> Tools -> HeidiSQL) -> tab Query -> paste isi schema.sql -> jalankan.
+
+Langkah 2: Jalankan Backend & Daftar
+    cd D:/Semester6/proyek/edushield/backend && npm start
+    cd D:/Semester6/proyek/edushield/frontend && npm run dev
+    Buka http://localhost:5173 -> Daftarkan sekolah
+
+Langkah 3: Dapatkan UUID Sekolah
+Jalankan SQL ini untuk mencari ID sekolah yang dibuat saat registrasi:
+
+    SELECT id, name FROM edushield.schools LIMIT 1;
+
+Langkah 4: (Opsional) Isi Data Demo
+Edit seed.sql dan ganti 'YOUR_SCHOOL_UUID_HERE' dengan UUID asli dari Langkah 3.
+Lalu jalankan:
+
+    mysql -u root edushield < D:\Semester6\proyek\edushield\database\seed.sql
+
+Langkah 5: Verifikasi
+Login ke aplikasi -> Dashboard akan menampilkan 10 siswa dengan distribusi risiko.
