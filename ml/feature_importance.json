@@ -1,0 +1,66 @@
+[
+  {
+    "feature": "Bullied_not_on_school_property_in_past_12_months",
+    "importance": 0.2715969408116847
+  },
+  {
+    "feature": "Cyber_bullied_in_past_12_months",
+    "importance": 0.14830636514012263
+  },
+  {
+    "feature": "Felt_lonely",
+    "importance": 0.07614355035533704
+  },
+  {
+    "feature": "Other_students_kind_and_helpful",
+    "importance": 0.06824822784034859
+  },
+  {
+    "feature": "Custom_Age",
+    "importance": 0.06700202447894994
+  },
+  {
+    "feature": "Physically_attacked",
+    "importance": 0.06126672359518692
+  },
+  {
+    "feature": "Parents_understand_problems",
+    "importance": 0.05950184907140121
+  },
+  {
+    "feature": "Close_friends",
+    "importance": 0.04025682072016056
+  },
+  {
+    "feature": "Most_of_the_time_or_always_felt_lonely",
+    "importance": 0.03930454796860303
+  },
+  {
+    "feature": "Physical_fighting",
+    "importance": 0.03928453710157158
+  },
+  {
+    "feature": "Miss_school_no_permission",
+    "importance": 0.03464195995525097
+  },
+  {
+    "feature": "Were_overweight",
+    "importance": 0.024822502077403486
+  },
+  {
+    "feature": "Sex",
+    "importance": 0.02374569951245874
+  },
+  {
+    "feature": "Missed_classes_or_school_without_permission",
+    "importance": 0.017739324826701836
+  },
+  {
+    "feature": "Were_obese",
+    "importance": 0.016405976166330424
+  },
+  {
+    "feature": "Were_underweight",
+    "importance": 0.011732950378488443
+  }
+]
